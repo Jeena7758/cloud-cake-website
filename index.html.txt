@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Cakes - Cork Mallow</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#fff8f5;
+}
+
+header{
+background:#4b2e2e;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#ffb6b9;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+margin:15px;
+text-decoration:none;
+color:#4b2e2e;
+font-weight:bold;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1605475123512-0c43a1c0fa7e") center/cover;
+height:350px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+.section{
+padding:40px;
+text-align:center;
+}
+
+.cakes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.cake-card{
+background:white;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+padding:15px;
+}
+
+.cake-card img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+background:#ff6b6b;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff4040;
+}
+
+.contact{
+background:#4b2e2e;
+color:white;
+padding:30px;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Cloud Cakes</h1>
+<p>Cork - Mallow</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#cakes">Cakes</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+Delicious Custom Cakes
+</div>
+
+<section class="section">
+<h2>Welcome to Cloud Cakes</h2>
+<p>We create beautiful custom cakes for birthdays, weddings and special events.</p>
+<p>Freshly baked with love in Mallow, Cork.</p>
+</section>
+
+<section class="section" id="cakes">
+
+<h2>Our Cakes</h2>
+
+<div class="cakes">
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1599785209797-9c2e8a2f61c4">
+<h3>Birthday Cakes</h3>
+<p>Custom birthday cakes for all ages.</p>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
+<h3>Kids Theme Cakes</h3>
+<p>Cartoon and animal theme cakes.</p>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f">
+<h3>Wedding Cakes</h3>
+<p>Elegant cakes for your special day.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="order">
+
+<h2>Order Your Cake</h2>
+
+<p>Call us to place your order.</p>
+
+<h3>📞 Phone: 9745327996</h3>
+
+<button onclick="alert('Call 9745327996 to order your cake!')">
+Order Now
+</button>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Cloud Cakes</strong></p>
+
+<p>
+7 Rose Bank, Rose Hill <br>
+Annabella, Mallow <br>
+Cork <br>
+P51KX6K
+</p>
+
+<p>Phone: 9745327996</p>
+
+<p>Free Delivery Available in Mallow</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Cloud Cakes - Cork Mallow</p>
+
+</footer>
+
+</body>
+</html>
