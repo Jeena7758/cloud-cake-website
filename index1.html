@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Cakes - Cork Mallow</title>
+<script>
+function openPopup(img){
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-img").src = img.src;
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#fff8f5;
+}
+
+header{
+background:white;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#ffb6b9;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+margin:15px;
+text-decoration:none;
+color:#4b2e2e;
+font-weight:bold;
+}
+
+.hero{
+ width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section{
+padding:40px;
+text-align:center;
+}
+
+.clm{
+width: 120px;
+height: 120px;
+}
+.cakes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.cake-card{
+background:white;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+padding:15px;
+}
+
+.cake-card img{
+width:100%;
+border-radius:10px;
+}
+.thumbnail{
+  width:200px;
+  cursor:pointer;
+}
+
+.popup{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  justify-content:center;
+  align-items:center;
+}
+
+.popup img{
+  max-width:80%;
+  max-height:80%;
+}
+
+.close{
+  position:absolute;
+  top:20px;
+  right:40px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+button{
+background:#ff6b6b;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff4040;
+}
+
+.contact{
+background:#4b2e2e;
+color:white;
+padding:30px;
+}
+.responsive {
+  max-width: auto;
+  height: 100%;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Cloud Cake</h1>
+    <p class="location">Cork - Mallow</p>
+
+<style>
+.location{
+    color: red;
+    font-weight: bold;
+}
+</style>
+</header>
+
+<style>
+header{
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:48px;
+    font-weight:900;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+}
+
+p{
+    font-size:20px;
+    font-weight:600;
+    color:#555;
+}
+</style><nav>
+<a href="#home">Home</a>
+<a href="#cakes">Cakes</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+<img src="wallpaper.jpg" alt="Sample Image" class="responsive">
+
+</div>
+
+<section class="section">
+<h2>Welcome to Cloud Cakes</h2>
+<p>We create beautiful custom cakes for birthdays, weddings and special events.</p>
+<p>Freshly baked with love in Mallow, Cork.</p>
+</section>
+
+<section class="section" id="cakes">
+
+<h2>Our Cakes</h2>
+
+<div class="cakes">
+
+<div class="cake-card">
+<h3>Birthday Cakes</h3>
+<p>Custom birthday cakes for all ages.</p>
+<table>
+<tr>
+<td class="clm">
+<img src="bday.jpeg" class="thumbnail" onclick="openPopup(this)"></td><td class="clm">
+<img src="achan.jpeg" class="thumbnail" onclick="openPopup(this)"></td><td class="clm">
+<img src="bday3.jpeg" class="thumbnail" onclick="openPopup(this)">
+</tr>
+</table>
+<table>
+<tr>
+<td class="clm">
+<img src="bday1.jpeg" class="thumbnail" onclick="openPopup(this)"></td><td class="clm">
+<img src="bday2.jpeg" class="thumbnail" onclick="openPopup(this)"></td>
+</tr>
+</table>
+
+</div>
+
+<div class="cake-card">
+<h3>Kids Theme Cakes</h3>
+<p>Cartoon and animal theme cakes.</p>
+<table>
+<tr>
+<td class="clm">
+<img src="masha.jpeg" class="thumbnail" onclick="openPopup(this)"></td><td class="clm">
+<img src="elsa.jpeg" class="thumbnail" onclick="openPopup(this)"></td>
+
+</tr>
+</table>
+
+
+
+</div>
+
+<div class="cake-card">
+<h3>House Warming Cakes</h3>
+<p>Elegant cakes for your special day.</p>
+<table>
+<tr>
+<td class="clm">
+<img src="housewarming.jpeg" class="thumbnail" onclick="openPopup(this)"></td><td class="clm">
+<img src="housewarming1.jpeg" class="thumbnail" onclick="openPopup(this)"></td>
+<td class="clm">
+</tr>
+</table>
+</div>
+<div id="popup" class="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <img id="popup-img">
+</div>
+</div>
+
+</section>
+
+<section class="section" id="order">
+
+<h2>Order Your Cake</h2>
+
+<p>Call us to place your order.</p>
+
+<h3>📞 Phone: 0892664080,0892212032</h3>
+
+<button onclick="alert('Call 9745327996 to order your cake!')">
+Order Now
+</button>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Cloud Cakes</strong></p>
+
+<p>
+7 Rose Bank, Rose Hill <br>
+Annabella, Mallow <br>
+Cork <br>
+P51KX6K
+</p>
+
+<p>Phone: 0892664080,0892212032</p>
+
+<p>Free Delivery Available in Mallow</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Cloud Cakes - Cork Mallow</p>
+
+</footer>
+
+</body>
+</html>
